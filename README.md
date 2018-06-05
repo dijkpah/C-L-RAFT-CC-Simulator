@@ -125,6 +125,10 @@ For example, if we want to calculate the z-average size per weight category, inc
  - Run the command `mvn package` in the root folder of the project to create the .jar file.
  - Rename the generated jar from `Simulator-1.0-stand-alone.jar` to `simulator.jar` and place in folder with shell scripts, if you want to be able to use those.
  
+## Testing the simulation
+ - Java assertions can be enabled by using the `-ea` flag when running the simulation using the `java` command. This can be done in IntelliJ via `Run -> Edit Configurations -> VM options`.
+ - Tests can be executed using the `mvn verify` command. This only executes validation tests, not speed tests and logging tests.  
+
 ## References
 
 [1]: H. Tobita, "Dimensions of Cross-Linked Polymers Formed in Living Vinyl/Divinyl Copolymerization", *Macromolecules*, vol. 27, no. 19, pp. 5413-5420, 1994.
