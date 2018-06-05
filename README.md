@@ -1,13 +1,13 @@
-##Running the simulation
+## Running the simulation
 
-####Requirements: 
+#### Requirements: 
  
 - Java 1.8 or newer
 - Excel 2010 or newer
 
-####Run instructions:
+#### Run instructions:
 
-#####First time run
+##### First time run
 
 The simulator generates the following project structured on its first run:
 
@@ -24,7 +24,7 @@ parent/
 To generate the excel files used for simulation configuration either execute MAKE_EXCEL.sh (or MAKE_EXCEL.bat when using Windows)
 or execute the simulator with the `--generate-excel` flag as described below.
 
-#####Run configuration
+##### Run configuration
 
  - First enter the simulation parameters in the excel files found in the `input` folder.
  - Execute the included shell scripts
@@ -40,7 +40,7 @@ OR
  - To generate a molecular weight distribution add `--mode=unstructured` or `-m=unstructured`
  - To generate the Excel file for the given input mode add `--generate-excel` or `-ge`
 
-##Input configuration
+## Input configuration
 
 The simulation parameters can simply be entered in the Excel files.
 The interaction radius function, which is one of the parameters, uses the following format:
@@ -77,7 +77,7 @@ and the following operators:
  - `l√(n/6) (√(1+m/6)+(4m/(3p)))^-0.25` by [1]
  - `0.0144w^0.561` by [2]
  
-##Output configuration
+## Output configuration
 
 Custom output functions are used to create a data point for a set of polymers, which are again represented by the aforementioned tuples.
 These functions use the same elements as those discussed in the previous section.
@@ -112,20 +112,20 @@ Several alias have been created for easier entering of output functions:
 These can be combined with the `EXC()` and `INC()` modifiers.
 For example, if we want to calculate the z-average size per weight category, including the initial molecules, but excluding  the largest molecule, we would use the function `EXC(INC(BIN(ZAV(SIZE))))`.
 
-##Compiling the simulation
+## Compiling the simulation
 
-####Requirements:
+#### Requirements:
 
 - Java Development Kit 1.8+
 - Maven 3.6.1+
 - Add javac to the Windows PATH variable
 - Add mvn to the Windows PATH variable
 
-####Instructions:
+#### Instructions:
  - Run the command `mvn package` in the root folder of the project to create the .jar file.
  - Rename the generated jar from `Simulator-1.0-stand-alone.jar` to `simulator.jar` and place in folder with shell scripts, if you want to be able to use those.
  
-##References
+## References
 
 [1]: H. Tobita, "Dimensions of Cross-Linked Polymers Formed in Living Vinyl/Divinyl Copolymerization", *Macromolecules*, vol. 27, no. 19, pp. 5413-5420, 1994.
  
