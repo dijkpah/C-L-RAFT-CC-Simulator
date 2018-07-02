@@ -74,7 +74,7 @@ and the following operators:
  
  Examples:
  
- - `l√(n/6) (√(1+m/6)+(4m/(3p)))^-0.25` by [1]
+ - `l√(n/6) (√(1+m/6)+(4m/(3π)))^-0.25` by [1]
  - `0.0144w^0.561` by [2]
  
 ## Output configuration
