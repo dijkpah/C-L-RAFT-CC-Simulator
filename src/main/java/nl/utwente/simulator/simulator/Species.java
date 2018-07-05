@@ -1,7 +1,5 @@
 package nl.utwente.simulator.simulator;
 
-import lombok.Getter;
-import lombok.Setter;
 import nl.utwente.simulator.entities.RadicalPosition;
 
 import static nl.utwente.simulator.config.Settings.*;
@@ -10,8 +8,16 @@ public abstract class Species {
 
     public Species(long number, Type type){this.number = number; this.type = type;}
 
-    @Getter @Setter
     private AbstractSpecies abstractSpecies;
+
+
+    public AbstractSpecies getAbstractSpecies() {
+        return this.abstractSpecies;
+    }
+
+    public void setAbstractSpecies(AbstractSpecies abstractSpecies) {
+        this.abstractSpecies = abstractSpecies;
+    }
 
     private long number;
     public final Type type;

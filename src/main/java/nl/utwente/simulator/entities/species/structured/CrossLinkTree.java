@@ -1,6 +1,5 @@
 package nl.utwente.simulator.entities.species.structured;
 
-import lombok.Getter;
 
 import javax.annotation.Nonnull;
 import java.util.Iterator;
@@ -74,10 +73,12 @@ public class CrossLinkTree implements Iterable<CrossLink>{
         }
     }
 
-    @Getter
     private class Element extends CrossLinkTree {
         private CrossLink value;
-        private int offset = 0;
+
+        public CrossLink getValue() {
+            return this.value;
+        }
 
         Element(CrossLink value) {
             super();

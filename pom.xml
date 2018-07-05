@@ -102,8 +102,7 @@
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.0.0-M4</version>
         </dependency>
-
-
+        
         <!-- for excel input -->
         <dependency>
             <groupId>org.apache.poi</groupId>
@@ -127,14 +126,6 @@
             <groupId>org.codehaus.janino</groupId>
             <artifactId>janino</artifactId>
             <version>3.0.7</version>
-        </dependency>
-
-        <!-- for convenience -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.18</version>
-            <scope>provided</scope>
         </dependency>
 
         <!-- for logging -->

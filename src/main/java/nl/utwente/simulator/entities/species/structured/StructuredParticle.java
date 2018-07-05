@@ -1,9 +1,8 @@
 package nl.utwente.simulator.entities.species.structured;
 
-import lombok.Getter;
 import nl.utwente.simulator.entities.RadicalPosition;
-import nl.utwente.simulator.simulator.Species;
 import nl.utwente.simulator.simulator.RejectedReaction;
+import nl.utwente.simulator.simulator.Species;
 import nl.utwente.simulator.utils.random.Random;
 
 import java.util.Arrays;
@@ -28,8 +27,11 @@ public class StructuredParticle extends Species {
     public final long numberOfMCRadicals;//mid-chain (cross-linker) reactiveCenters
     protected final CrossLink.Pointer[] activeVinylGroups;
 
-    @Getter
     protected CrossLinkTree crosslinks;
+    
+    public CrossLinkTree getCrosslinks() {
+        return this.crosslinks;
+    }
 
     protected StructuredParticle(long number, Type type, long numberOfI, long numberOfM, long numberOfC, long numberOfActiveVinylGroups, long numberOfENRadicals, long numberOfECRadicals, long numberOfMCRadicals) {
         super(number, type);
