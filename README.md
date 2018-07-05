@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.com/dijkpah/C-L-RAFT-CC-Simulator.svg?branch=master)](https://travis-ci.com/dijkpah/C-L-RAFT-CC-Simulator)
+
 ## Running the simulation
 
 #### Requirements: 
@@ -10,18 +13,16 @@
 ##### First time run
 
 The simulator generates the following project structured on its first run:
+    
+	parent/
+	    simulator.jar
+	    input/
+	        structured.xlsx
+	        unstructured.xlsx
+	    logs/
+	    output/
 
-```
-parent/
-    simulator.jar
-    input/
-        structured.xlsx
-        unstructured.xlsx
-    logs/
-    output/
-```
-
-To generate the excel files used for simulation configuration either execute MAKE_EXCEL.sh (or MAKE_EXCEL.bat when using Windows)
+To generate the excel files used for simulation configuration either execute MAKE\_EXCEL.sh (or MAKE\_EXCEL.bat when using Windows)
 or execute the simulator with the `--generate-excel` flag as described below.
 
 ##### Run configuration
