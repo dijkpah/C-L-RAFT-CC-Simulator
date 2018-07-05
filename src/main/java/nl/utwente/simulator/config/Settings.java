@@ -114,10 +114,7 @@ public class Settings {
     @Input("Length of monomer segment in polymer(nm)")
     public static double MONOMER_LENGTH = 0.2487;                                                                       //Default is one C-C-C bond, measured by Chem3D
     @Input("Formula for radius of interaction")
-
-    //Tobita: l√(n/6) (√(1+(R-1)/6)+(4(R-1)/(3π)))^-0.25
-    //Pomposo: 0.144w^0.561
-    public static String INTERACTION_RADIUS_FORMULA = "0.144w^0.561";
+    public static String INTERACTION_RADIUS_FORMULA = "0.0144w^0.561";
     @Input("Interaction volume calibration factor")
     public static double COMPENSATION_FACTOR = 2.2;
 
