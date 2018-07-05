@@ -1,5 +1,6 @@
 @ECHO OFF
 setlocal
+cd %~dp0
 SET /A argsC = 0
 FOR %%A IN (%*) DO Set /A argsC+=1
 

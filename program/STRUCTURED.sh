@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd "$(dirname "$0")"
 if [ "$#" == 0 ]; then
 	java -jar simulator.jar -m=structured
 else
