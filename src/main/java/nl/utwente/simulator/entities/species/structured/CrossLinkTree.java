@@ -1,8 +1,8 @@
 package nl.utwente.simulator.entities.species.structured;
 
 import lombok.Getter;
-import lombok.NonNull;
 
+import javax.annotation.Nonnull;
 import java.util.Iterator;
 
 public class CrossLinkTree implements Iterable<CrossLink>{
@@ -11,13 +11,13 @@ public class CrossLinkTree implements Iterable<CrossLink>{
     private CrossLinkTree right;
     private final int offset;
 
-    public CrossLinkTree(@NonNull CrossLinkTree left, @NonNull CrossLinkTree right, int offset) {
+    public CrossLinkTree(@Nonnull CrossLinkTree left, @Nonnull CrossLinkTree right, int offset) {
         this.left = left;
         this.right = right;
         this.offset = offset;
     }
 
-    public CrossLinkTree(@NonNull CrossLinkTree left, @NonNull CrossLink value) {
+    public CrossLinkTree(@Nonnull CrossLinkTree left, @Nonnull CrossLink value) {
         this.right = new Element(value);
         this.left = left;
         this.offset = 0;

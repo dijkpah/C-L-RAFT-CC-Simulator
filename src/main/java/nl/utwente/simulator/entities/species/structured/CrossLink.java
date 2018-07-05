@@ -1,12 +1,12 @@
 package nl.utwente.simulator.entities.species.structured;
 
-import lombok.NonNull;
+import javax.annotation.Nonnull;
 
 public class CrossLink {
     public final Pointer firstHalf;
     public final Pointer secondHalf;
 
-    public CrossLink(@NonNull Pointer firstHalf, @NonNull Pointer secondHalf) {
+    public CrossLink(@Nonnull Pointer firstHalf, @Nonnull Pointer secondHalf) {
         this.firstHalf = firstHalf;
         this.secondHalf = secondHalf;
     }

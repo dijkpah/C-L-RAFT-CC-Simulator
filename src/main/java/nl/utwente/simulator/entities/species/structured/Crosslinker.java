@@ -1,23 +1,23 @@
 package nl.utwente.simulator.entities.species.structured;
 
 
-import lombok.NonNull;
+import javax.annotation.Nonnull;
 
 public abstract class Crosslinker extends Molecule{
 
 
-    private Crosslinker(@NonNull Molecule prev) {
+    private Crosslinker(@Nonnull Molecule prev) {
         super(prev);
     }
 
     public static class FirstHalf extends Crosslinker {
-        FirstHalf(@NonNull Molecule prev){
+        FirstHalf(@Nonnull Molecule prev){
             super(prev);
         }
     }
 
     public static class SecondHalf extends Crosslinker {
-        SecondHalf(@NonNull Molecule prev){
+        SecondHalf(@Nonnull Molecule prev){
             super(prev);
         }
     }
